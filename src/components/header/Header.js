@@ -17,7 +17,7 @@ const Header = ({ cart }) => {
     <nav className="header">
       <div className="header_wrapper" id={showMenu ? "header_hidden" : ""}>
         <ul className="follow_button" id={showMenu ? "follow_hidden" : ""}>
-          <li>Follow:</li>
+          <li>Follow Us:</li>
           <li>
             <FacebookIcon style={{ color: "#4267B2" }} />
           </li>
