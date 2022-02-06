@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/react-spa/static/css/main.b5c95006.css",
-    "main.js": "/react-spa/static/js/main.9eb90cd1.js",
+    "main.js": "/react-spa/static/js/main.7231509d.js",
     "static/media/image04.jpg": "/react-spa/static/media/image04.70544171c122871a239c.jpg",
     "static/media/image06.jpg": "/react-spa/static/media/image06.4d9c1e28ec832ed421dc.jpg",
     "static/media/image03.jpg": "/react-spa/static/media/image03.fedc07a307269cdabb48.jpg",
     "static/media/image01.jpg": "/react-spa/static/media/image01.9083dafceef61f41f4b5.jpg",
     "static/media/image02.jpg": "/react-spa/static/media/image02.122d3e929cd1dd2a3677.jpg",
+    "static/media/logo.png": "/react-spa/static/media/logo.35ba03f692fd8f78f734.png",
     "static/media/image05.jpg": "/react-spa/static/media/image05.f3bb07c77e6e136cb63b.jpg",
     "index.html": "/react-spa/index.html",
     "main.b5c95006.css.map": "/react-spa/static/css/main.b5c95006.css.map",
-    "main.9eb90cd1.js.map": "/react-spa/static/js/main.9eb90cd1.js.map"
+    "main.7231509d.js.map": "/react-spa/static/js/main.7231509d.js.map"
   },
   "entrypoints": [
     "static/css/main.b5c95006.css",
-    "static/js/main.9eb90cd1.js"
+    "static/js/main.7231509d.js"
   ]
 }
