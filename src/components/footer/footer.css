@@ -47,11 +47,34 @@
     }
 
     .footer_service {
-        flex-direction: column;
+        /* flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 18px; */
         font-size: 18px;
+        flex-wrap: wrap;
+        margin:-2px;
+    }
+
+    .footer_service >* {
+        flex: 1 1 160px;
+        margin: 2px;
     }
 
     .social{
         flex-wrap: wrap;
     }
+
+    .footer_wrapper h2 {
+        font-size: 16px;
+        margin-right: 52px;
+        margin-left: 17px;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    /* .footer_service {
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 18px;
+    } */
 }
