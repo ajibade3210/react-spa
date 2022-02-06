@@ -22,6 +22,7 @@ span.mobile_menu {
 
 .follow_button li, .header_status li {
     font-weight: bold;
+    font-size: 1.1rem;
     margin: 0 11px;
 }
 

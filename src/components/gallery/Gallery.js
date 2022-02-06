@@ -1,17 +1,20 @@
+import { useState, useEffect } from "react";
+import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import Images from "./images";
-import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import "./gallery.css";
-import { useState } from "react";
 
 function Gallery({ parentCallback }) {
   const [count, setCount] = useState(0);
 
   const handleCount = () => {
-    setCount(count + 1)
-    parentCallback(count)
-  }
+    setCount(count + 1);
+    parentCallback(count);
+  };
 
+  useEffect(() => {
+    parentCallback(count);
+  }, []);
 
   return (
     <div className="Gallery">
@@ -27,8 +30,11 @@ function Gallery({ parentCallback }) {
                 <p>{item.price}</p>
               </div>
               <div className="gallery_icon">
-                <ShoppingCartOutlinedIcon onClick={handleCount} style={{ color:"#273E87"}}/>
-                <FavoriteBorderIcon style={{ color:"#182754"}}/>
+                <ShoppingCartOutlinedIcon
+                  onClick={handleCount}
+                  style={{ color: "#273E87" }}
+                />
+                <FavoriteBorderIcon style={{ color: "#182754" }} />
               </div>
             </div>
           </div>

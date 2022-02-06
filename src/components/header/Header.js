@@ -31,7 +31,7 @@ const Header = ({cart}) => {
 
         <ul className="header_status" id={showMenu ? "status_hidden": ""}>
           <li>$239.00</li>
-          <li><SearchOutlinedIcon/> </li>
+          <li><SearchOutlinedIcon fontSize="medium"/> </li>
           <li>
           <Badge badgeContent={cart} showZero color="primary">
             <LocalMallOutlinedIcon fontSize="medium"/>
