@@ -1,86 +1,88 @@
 .header_wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
 }
 
 .header #header_hidden {
-    display: flex;
+  display: flex;
 }
 
 span.mobile_menu {
-    display: none;
+  display: none;
 }
 
-.follow_button, .header_status {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+.follow_button,
+.header_status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
-.follow_button li, .header_status li {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin: 0 11px;
+.follow_button li,
+.header_status li {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0 11px;
 }
 
-
-.header_status span{
-    margin-left: 1rem;
+.header_status span {
+  margin-left: 1rem;
 }
 
-.header_status > span:first-child{
-   font-weight: bold;
+.header_status > span:first-child {
+  font-weight: bold;
 }
 
 .header_logo {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
-@media only screen and (max-width: 845px){
-    .header_status,.follow_button {
-        display: none;
-    }
+@media only screen and (max-width: 845px) {
+  .header_status,
+  .follow_button {
+    display: none;
+  }
 
-    .header_wrapper #logo_hidden {
-        margin: 0px 0px .7rem;
-    }
+  .header_wrapper #logo_hidden {
+    margin: 0px 0px 0.7rem;
+  }
 
-    .header .header_wrapper {
-        background-color: #00828c;
-    }
+  .header .header_wrapper {
+    background-color: #00828c;
+  }
 
-    .header #header_hidden {
-        position: absolute;
-        display: block;
-        left: 0px;
-        top: -5px;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        display: flex;
-         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #00828c;
-        color: wheat;
-    }
+  .header #header_hidden {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: -5px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00828c;
+    color: wheat;
+  }
 
-    .header_wrapper #status_hidden{
-        display: flex;
-    }
+  .header_wrapper #status_hidden {
+    display: flex;
+  }
 
-        span.mobile_menu,span.mobile_menu.hidden {
-        display: block;
-        position: absolute;
-        color: #fff;
-        background-color: #00828c;
-        border: none;
-        outline: none;
-        top: 15px;
-        right: 25px;
-    }
-
+  span.mobile_menu,
+  span.mobile_menu.hidden {
+    display: block;
+    position: absolute;
+    color: #fff;
+    background-color: #00828c;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "./components/footer/Footer";
-import Gallery from "./components/gallery/Gallery"
+import Gallery from "./components/gallery/Gallery";
 import Header from "./components/header/Header";
 
 function App() {
@@ -12,10 +12,9 @@ function App() {
 
   return (
     <div className="App">
-     <Header cart={cartCount}/>
-     <Gallery parentCallback={handeleCartCount}/>
-     <Footer/>
-     {/* <Nav/> */}
+      <Header cart={cartCount} />
+      <Gallery parentCallback={handeleCartCount} />
+      <Footer />
     </div>
   );
 }

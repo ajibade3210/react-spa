@@ -1,82 +1,82 @@
 .footer {
-    background-color: #182754;
+  background-color: #182754;
 }
 
 .footer_wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 9rem;
-    color:#FFFFFF;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 1.1rem 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 9rem;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1.1rem 0px;
 }
 
 .footer_wrapper h2:hover {
-    color: #00828c;
+  color: #00828c;
 }
 
-.footer_service, .social {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-weight: 500;
-    cursor: pointer;
+.footer_service,
+.social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.footer_service li{
-    padding: 10px;
-    font-weight: bold;
-    line-height: 2px;
+.footer_service li {
+  padding: 10px;
+  font-weight: bold;
+  line-height: 2px;
 }
 
-.footer_service li:hover{
-    color: #00828c;
+.footer_service li:hover {
+  color: #00828c;
 }
 
-.social{
-    margin-left: .5rem;
+.social {
+  margin-left: 0.5rem;
 }
 
-.social li{
-    padding: 5px;
+.social li {
+  padding: 5px;
 }
 
-@media only screen and (max-width: 845px){
+@media only screen and (max-width: 845px) {
+  .footer_wrapper {
+    padding: 5.1rem 0px;
+  }
 
-    .footer_wrapper {
-        padding: 5.1rem 0px;
-    }
+  .footer_service {
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin: -2px;
+  }
 
-    .footer_service {
-        font-size: 18px;
-        flex-wrap: wrap;
-        margin:-2px;
-    }
+  .footer_service > * {
+    flex: 1 1 160px;
+    margin: 2px;
+  }
 
-    .footer_service >* {
-        flex: 1 1 160px;
-        margin: 2px;
-    }
+  .social {
+    flex-wrap: wrap;
+  }
 
-    .social{
-        flex-wrap: wrap;
-    }
+  .footer_wrapper h2 {
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 17px;
+  }
 
-    .footer_wrapper h2 {
-        font-size: 15px;
-        margin-right: 50px;
-        margin-left: 17px;
-    }
-
-    .footer_service li{
-        font-size: 12px;
-        padding: 8px;
-    }
+  .footer_service li {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
 
-@media only screen and (max-width: 380px){
-    .footer_wrapper h2 {
-        flex: 70%;
-    }
+@media only screen and (max-width: 380px) {
+  .footer_wrapper h2 {
+    flex: 70%;
+  }
 }
