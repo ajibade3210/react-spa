@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/logo.png";
 import LocalMallOutlinedIcon from "@material-ui/icons/LocalMallOutlined";
 import Badge from "@material-ui/core/Badge";
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
