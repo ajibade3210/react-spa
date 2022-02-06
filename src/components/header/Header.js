@@ -13,8 +13,6 @@ import "./header.css";
 const Header = ({cart}) => {
   const [showMenu, setShowMenu] = useState(false)
 
-  console.log('cartCount',cart)
-
   return (
     <nav className="header">
       <div className="header_wrapper" id={showMenu ? "header_hidden": ""}>
