@@ -12,6 +12,10 @@
     padding: 1.1rem 0px;
 }
 
+.footer_wrapper h2 {
+    flex: 33%;
+}
+
 .footer_wrapper h2:hover {
     color: #00828c;
 }
@@ -25,7 +29,9 @@
 }
 
 .footer_service li{
-    padding: 5px;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 2px;
 }
 
 .footer_service li:hover{
@@ -65,16 +71,8 @@
     }
 
     .footer_wrapper h2 {
-        font-size: 16px;
-        margin-right: 52px;
+        font-size: 15px;
+        margin-right: 50px;
         margin-left: 17px;
     }
-}
-
-@media only screen and (max-width: 710px){
-    /* .footer_service {
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: 18px;
-    } */
 }
