@@ -48,6 +48,10 @@ span.mobile_menu {
         margin: 0px 0px .7rem;
     }
 
+    .header .header_wrapper {
+        background-color: #00828c;
+    }
+
     .header #header_hidden {
         position: absolute;
         display: block;

@@ -11,7 +11,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import "./header.css";
 
 const Header = ({cart}) => {
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
 
   console.log('cartCount',cart)
 
