@@ -44,15 +44,22 @@ const Header = ({ cart }) => {
             </Badge>
           </li>
         </ul>
+{showMenu &&
+        <ul className="mobile_menu-show" id="mobile_menu-view">
+          <li className="items">Home</li>
+          <li className="items">About Us</li>
+          <li className="items">Follow Us</li>
+        </ul>
+}
 
         <span
           className={`mobile_menu ${showMenu ? "hidden" : ""}`}
           onClick={() => setShowMenu(!showMenu)}
         >
           {showMenu ? (
-            <CloseIcon fontSize="large" />
+            <CloseIcon fontSize="large"/>
           ) : (
-            <MenuIcon fontSize="large" />
+            <MenuIcon fontSize="large"/>
           )}
         </span>
       </div>

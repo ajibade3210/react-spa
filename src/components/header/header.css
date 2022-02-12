@@ -40,6 +40,10 @@ span.mobile_menu {
   margin-top: 5px;
 }
 
+.mobile_menu-show {
+  display: none;
+}
+
 @media only screen and (max-width: 845px) {
   .header_status,
   .follow_button {
@@ -55,23 +59,62 @@ span.mobile_menu {
   }
 
   .header #header_hidden {
-    position: absolute;
+    position: fixed;
     display: block;
     left: 0px;
     top: -5px;
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background-color: #00828c;
     color: wheat;
+    transition: 0.9s;
+    animation: updown 3s ease 6;
+  }
+
+  @keyframes updown {
+    0%, 50%, 100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(5px);
+    }
+    25% {
+      transform: translateY(-20px);
+    }
+    30% {
+      transform: translateY(20px);
+    }
+    35% {
+      transform: translateY(-5px);
+    }
+  }
+
+  #mobile_menu-view {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
   }
 
   .header_wrapper #status_hidden {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_status li {
+    font-size: 1.4rem;
+  }
+
+  .header_status .MuiSvgIcon-root {
+    font-size: 1.7rem !important;
   }
 
   span.mobile_menu,
@@ -84,5 +127,15 @@ span.mobile_menu {
     outline: none;
     top: 15px;
     right: 25px;
+  }
+
+  #mobile_menu-view li {
+    font-size: 2.5rem;
+    font-family: monospace;
+  }
+
+  #mobile_menu-view li:hover {
+    color: #ff0000;
+    font-weight: bold;
   }
 }
